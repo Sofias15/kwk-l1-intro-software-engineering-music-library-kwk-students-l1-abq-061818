@@ -13,7 +13,7 @@ describe 'Music Library' do
     }
   end
 
-  describe '#list_artists' do
+  describe 'list_artists' do
     it "prints out all the artists in the library using the each_key method" do
       output = capture_stdout { list_artists(@library) }
       expect(output).to eq( "taylor_swift\nsilento\nselena_gomez\nmark_ronson\nandy_grammer\nmaroon_five\n")
